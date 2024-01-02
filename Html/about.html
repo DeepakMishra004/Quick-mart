@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest in quality items - The art of Quality</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+<section id="header">
+    <a href="#"><img src="img/logo.png" class =logo alt="" width="25%" height="5%"></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+</section>
+<section id="page-header" class="about-header">
+   
+    <h2>#KnowUs</h2>
+    <p>Read more about us and our products</p>
+</section>
+<section id="about-head" class="section-p1">
+    <img src="img/backimg2.png" alt="">
+    <div>
+        <h2>Who we are?</h2>
+        <p>
+
+            <abbr title="">  rtyuivbnmdkwgdbnsmwkiedhsnm   </abbr>
+        </p>
+        <br><br>
+        <marquee bgcolor="#ccc" loop="-1" scrollamout="5" width="100%">wertyuikmnbvcsxvb
+
+        </marquee>
+
+    </div>
+
+</section>
+<section id="about-product">
+<h1>See Product</h1>
+<div class="row">
+    <div class="col">
+        <div class="feature-img">
+            <img src="img/book.png" width="100%" alt="">
+            <img src="img/play.png" width="30px" alt="" class="play-btn" onclick="playvideo('media/v-1.mp4')">
+        </div>
+    </div>
+    <div class="col">
+        <div class="smaller-img-row">
+            <div class="smaller">
+                <img src="img/book.png" height="70px" alt="">
+                <img src="img/play.png" width="30px"  alt="" class="play-btn"  onclick="playvideo('media/v-3.mp4')">
+            </div>
+            <p>how ton use book <br>
+            this is usefull to you</p>
+        </div>
+        <div class="smaller-img-row">
+            <div class="smaller">
+                <img src="img/USB Data Cable.jpg" height="70px" alt="">
+                <img src="img/play.png" width="30px" alt="" class="play-btn"  onclick="playvideo('media/v-4.mp4')">
+            </div>
+            <p>how ton use book <br>
+            this is usefull to you</p>
+        </div>
+        <div class="smaller-img-row">
+            <div class="smaller">
+                <img src="img/Mini juicer.jpg" height="70px" alt="">
+                <img src="img/play.png" width="30px" alt="" class="play-btn"  onclick="playvideo('media/v-5.mp4')">
+            </div>
+            <p>how ton use book <br>
+            this is usefull to you</p>
+        </div>
+        <div class="smaller-img-row">
+            <div class="smaller">
+                <img src="img/Bag mat.jpg" height="70px" alt="">
+                <img src="img/play.png" width="30px" alt="" class="play-btn">
+            </div>
+            <p>how ton use book <br>
+            this is usefull to you</p>
+        </div>
+    </div>
+</div>
+<div class="video-player" id="videoplayer">
+    <video autoplay muted controls src="media/v-1.mp4" style="width: 100%;" id="myvideo"></video>
+    <img src="img/close.png" alt="" class="close-btn" onclick="stopVideo('media/v-3.mp4')">
+</div>
+<script>
+    var videoplayer = document.getElementById("videoplayer");
+    var myvideo = document.getElementById("myvideo");
+    function stopVideo(){
+        videoplayer.style.display ="none"
+    }
+    function playvideo(file){
+        myvideo.src = file;
+        videoplayer.style.display = "block";
+
+    }
+</script>
+</section>
+  <footer class="section-p1">
+    <div class="col">
+     <h5>Contact</h5>
+     <p><strong>Address:</strong> Kanpur Dehat,keshrwal Road,shivaji nagar</p>
+     <p><strong>Phone:</strong>+(91) 9119965133</p>
+     <p><strong>Hours:</strong> 10:00 - 4:00, Mon - Sat</p>
+     <div class="follow">
+        <h5>Follow us</h5>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-telegram"></i>
+
+        </div>
+     </div>
+    </div>
+    <div class="col">
+        <h5>About</h5>
+        <a href="#">About us</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+        <h5>My Account</h5>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+        <div class="row">
+            <p>    </p>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay.png" alt="">
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2023-2023, Conditions of Use & Sale, Interest-Based Ads</p>
+    </div>
+  </footer>
+  <script>
+    
+    var mainImg = document.getElementById("mainImg");
+    var smalling = document.getElementById("small-img");
+    smalling[0].onclick = function(){
+        mainImg.src = smalling[0].src;
+
+    }
+    smalling[1].onclick = function(){
+        mainImg.src = smalling[1].src;
+
+    }
+    smalling[2].onclick = function(){
+        mainImg.src = smalling[2].src;
+
+    }
+  </script>
+
+
+<script src="script/script.js"></script>
+
+</body>
+</html>
